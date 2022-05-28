@@ -131,6 +131,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\tblDepartmentsController.cs" />
+    <Compile Include="Controllers\tblEmployeesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -215,6 +216,11 @@
     <Content Include="Views\tblDepartments\Details.cshtml" />
     <Content Include="Views\tblDepartments\Edit.cshtml" />
     <Content Include="Views\tblDepartments\Index.cshtml" />
+    <Content Include="Views\tblEmployees\Create.cshtml" />
+    <Content Include="Views\tblEmployees\Delete.cshtml" />
+    <Content Include="Views\tblEmployees\Details.cshtml" />
+    <Content Include="Views\tblEmployees\Edit.cshtml" />
+    <Content Include="Views\tblEmployees\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

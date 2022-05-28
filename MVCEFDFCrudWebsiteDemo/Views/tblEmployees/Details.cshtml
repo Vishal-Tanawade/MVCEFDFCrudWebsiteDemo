@@ -1,0 +1,42 @@
+﻿@model MVCEFDFCrudWebsiteDemo.Models.tblEmployee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tblEmployee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblDepartment.DeptName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblDepartment.DeptName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblDepartment1.DeptName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblDepartment1.DeptName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EmpID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
