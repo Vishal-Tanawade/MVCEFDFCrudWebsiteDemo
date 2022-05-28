@@ -11,6 +11,7 @@ namespace MVCEFDFCrudWebsiteDemo.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class tblDepartment
     {
@@ -20,9 +21,11 @@ namespace MVCEFDFCrudWebsiteDemo.Models
             this.tblEmployees = new HashSet<tblEmployee>();
             this.tblEmployees1 = new HashSet<tblEmployee>();
         }
-    
+        [Key]
         public int DeptId { get; set; }
+        [Required(ErrorMessage ="Enter Dept Name")]
         public string DeptName { get; set; }
+        [Required(ErrorMessage ="Enter Location")]
         public string DeptLoc { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
